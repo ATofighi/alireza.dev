@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>My test page</title>
+        <style>
+            body > input {
+                color:red;
+                font-weight: bold;
+                text-decoration: none;
+                background: rgba(0, 0, 255, 0);
+            }
+        </style>
+    </head>
+    <body>
+
+        <span>
+            hi
+        </span>
+        <div>
+            bye
+        </div>
+        <a class="link" href="https://google.com">Salam</a>
+
+        <form action="/submit" method="post" class="my-form">
+            <input type="hidden" name="action" value="login" />
+            <input class="link" type="text" name="name" style="width: 10%;" placeholder="اسمت چیه؟"/>
+            <input type="password" name="pass" placeholder="رمزت چیه؟"/>
+            <input type="submit" name="submit" style="background: blue; color: white" value="ارسال" />
+        </form>
+
+
+        
+    </body>
+</html>

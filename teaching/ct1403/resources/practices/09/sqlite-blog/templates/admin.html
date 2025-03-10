@@ -1,0 +1,35 @@
+<!doctype html>
+<html dir="rtl">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>{{.title}}</title>
+    <meta name="description" content="یک توضیحات تستی">
+    <link rel="stylesheet" href="/static/final-style.css">
+</head>
+<body>
+    <div id="main-container">
+        <header>
+            <h1>{{.title}}</h1>
+            <nav>
+                <ul>
+                    <li><a href="/" title="صفحه‌ی اصلی">خانه</a></li>
+                    <li><a href="https://google.com" target="_blank" title="گوگل در یک صفحه‌ی جدید باز می‌شود!">گوگل</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>ثبت پست</h2>
+                <form method="post" action="/admin/">
+                    <input type="text" name="title" placeholder="عنوان پست" />
+                    <br>
+                    <textarea name="content" placeholder="محتوای پست"></textarea>
+                    <br>
+                    <input type="submit" value="ثبت" />
+                </form>
+            </section>
+        </main>
+    </div>
+</body>
+</html>
