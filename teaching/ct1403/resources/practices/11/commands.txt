@@ -1,0 +1,6 @@
+export POSTGRESQL_URL=postgres://ct1403:123456@localhost:5432/blog2
+
+
+migrate create -ext sql -dir db/migrations create_initial_tables
+
+migrate --path=db/migrations --database=$POSTGRESQL_URL up
